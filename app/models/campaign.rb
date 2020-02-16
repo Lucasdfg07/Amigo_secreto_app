@@ -1,5 +1,5 @@
 class Campaign < ApplicationRecord
-  before_validation :set_member, on: :create
+  after_validation :set_member, on: :create
   before_validation :set_status, on: :create
 
   belongs_to :user

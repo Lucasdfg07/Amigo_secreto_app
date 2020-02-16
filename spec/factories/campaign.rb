@@ -4,7 +4,7 @@ FactoryBot.define do
       description   { FFaker::Lorem.sentence }
       user
       status        { :pending }
-      locate        { "#{FFaker::Address.city}, #{FFaker::Address.street_address}"}
+      locale        { "#{FFaker::Address.city}, #{FFaker::Address.street_address}"}
       event_date    { FFaker::Time.date }
       event_hour    { rand(24).to_s }
     end
