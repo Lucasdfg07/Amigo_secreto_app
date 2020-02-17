@@ -18,15 +18,15 @@ services:
     depends_on:
       - 'postgres'
       - 'redis'
-      - 'website'
+      - 'app'
     build: .
     command: bash start_jobs
-    volumes:
-      - '.:/nosso_amigo_secreto'
     volumes_from:
       - box
+    env_file:
+      - '.env-prod'
 
-  website:
+  app:
     depends_on:
       - 'postgres'
       - 'redis'
@@ -34,22 +34,16 @@ services:
     command: bash start
     ports:
       - '3000:3000'
-    volumes:
-      - '.:/nosso_amigo_secreto'
     volumes_from:
     - box
+    env_file:
+    - '.env-prod'
 
   box:
     image: busybox
     volumes:
       - /box
-      
-  mailcatcher:
-    image: yappabe/mailcatcher
-    ports:
-      - 1025:1025
-      - 1080:1080
-      
+
 volumes:
   redis:
   postgres:
