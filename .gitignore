@@ -14,7 +14,7 @@
 !/tmp/.keep
 
 # Arquivos production
-.env-prod
+
 docker-compose-prod.yml
 /config/nginx.conf
 
