@@ -13,6 +13,8 @@
 !/log/.keep
 !/tmp/.keep
 
+/keys.env
+
 # Arquivos production
 .env-prod
 docker-compose-prod.yml

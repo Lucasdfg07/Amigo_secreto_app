@@ -19,7 +19,7 @@ $(document).on 'turbolinks:load', ->
         dataType: 'json',
         data: {}
         success: (data, text, jqXHR) ->
-          $(location).attr('href','/campaigns');
+          $(locale).attr('href','/campaigns');
         error: (jqXHR, textStatus, errorThrown) ->
           Materialize.toast('Problema na remoção da Campanha', 4000, 'red')
     return false

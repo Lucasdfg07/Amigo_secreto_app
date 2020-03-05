@@ -8,8 +8,8 @@ end
 gem 'devise'
 gem 'materialize-sass', '~> 0.99.0'
 gem 'material_icons'
-gem 'redis'
-gem 'sidekiq'
+gem 'redis', '~> 3.0'
+gem 'sidekiq', '~> 5.0'
 
 # Gems para o mailer
 gem 'inky-rb', require: 'inky'

@@ -19,7 +19,7 @@
   <row>
     <columns>
       <h4 class="text-center"><%= @campaign.title %></h4>
-      <p class="text-center"><b><%= (@campaign.event_date)? "#{@campaign.event_date.strftime("%d/%m/%y")} | " : '' %></b><b><%= @campaign.location %></b></p>
+      <p class="text-center"><b><%= (@campaign.event_date)? "#{@campaign.event_date.strftime("%d/%m/%y")} | " : '' %></b><b><%= @campaign.locale %></b></p>
       <spacer size="16"></spacer>
       <p class="text-center"><%= @campaign.description %></p>
     </columns>
