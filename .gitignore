@@ -16,9 +16,11 @@
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
-/keys.env
 /node_modules
 /yarn-error.log
+
+/keys.env
+/.env-prod
 
 /public/assets
 .byebug_history

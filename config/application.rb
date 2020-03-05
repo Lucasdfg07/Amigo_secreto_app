@@ -19,8 +19,8 @@ module AmigoSecretoApp
       address:              'smtp.gmail.com',
       port:                 25,
       domain:               'gmail.com',
-      user_name:            "#{ENV["EMAIL_KEY"]}",
-      password:             "#{ENV["PASSWORD_KEY"]}",
+      user_name:            "#{ENV["SMTP_USER"]}",
+      password:             "#{ENV["SMTP_PASSWORD"]}",
       authentication:       :plain,
       enable_starttls_auto: true
     }
