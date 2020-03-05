@@ -13,13 +13,15 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
 /keys.env
+/node_modules
+/yarn-error.log
 
-# Arquivos production
-.env-prod
-docker-compose-prod.yml
-/config/nginx.conf
-
-
-# Ignore Byebug command history file.
+/public/assets
 .byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
